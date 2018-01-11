@@ -3,6 +3,12 @@
 import argparse
 import fontconfig
 
+def get_fonts_with_chars(chars):
+    for font_file in fontconfig.query():
+        font = fontconfig.FcFont(font_file)
+        if all([font.has_char(char) for char in chars]):
+            yield font
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description='Find a list of fonts that support a given list of characters.'
@@ -13,7 +19,5 @@ if __name__ == '__main__':
         help='Characters the font must support.',
     )
     args = parser.parse_args()
-    for font_file in fontconfig.query():
-        font = fontconfig.FcFont(font_file)
-        if all([font.has_char(char) for char in args.chars]):
-            print(font.file)
+    for font in get_fonts_with_chars(args.chars):
+        print(font.file)
