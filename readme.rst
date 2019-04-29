@@ -33,7 +33,7 @@ Questions and answers
 Why is it so slow?
 ~~~~~~~~~~~~~~~~~~
 
-Note: this line is very expensive CPU-wise::
+This line is very expensive CPU-wise::
 
     font = fontconfig.FcFont(font_file)
 
