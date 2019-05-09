@@ -37,7 +37,7 @@ This line is very expensive CPU-wise::
 
     font = fontconfig.FcFont(font_file)
 
-I wish the ``fontconfig`` library would make it easier
-to just iterate over the objects
-rather than forcing a conversion each time,
-but when I try to iterate it just turns them into strings.
+This is reasonable for applications that only need a single font,
+but for this use case it would be easier to convert them all at once,
+then iterate through the entire list of fonts.
+That's not how the ``fontconfig`` library works, though.
