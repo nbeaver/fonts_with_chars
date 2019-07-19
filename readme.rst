@@ -2,6 +2,10 @@ Most fonts don't cover every code point.
 For some of the more unusual characters,
 given a character, what fonts have it.
 
+This is also helpful for determining
+if text is being rendered with the expected font
+or if the rendering engine is using a fallback font instead.
+
 Example usage::
 
     $ unicode 🍁
@@ -49,14 +53,13 @@ Multiple characters::
     /usr/share/fonts/truetype/asana-math/Asana-Math.otf
     /usr/share/fonts/opentype/stix/STIXGeneral-Regular.otf
 
-Is that character being rendered with the font you think it is,
-or is it using a fall-back font?
+Relevant links:
 
-https://unix.stackexchange.com/questions/162305/find-the-best-font-for-rendering-a-codepoint
+- https://unix.stackexchange.com/questions/162305/find-the-best-font-for-rendering-a-codepoint
 
-https://stackoverflow.com/questions/4458696/finding-out-what-characters-a-font-supports
+- https://stackoverflow.com/questions/4458696/finding-out-what-characters-a-font-supports
 
-https://apple.stackexchange.com/questions/287707/get-list-of-all-fonts-containing-a-specific-character/291200#291200
+- https://apple.stackexchange.com/questions/287707/get-list-of-all-fonts-containing-a-specific-character/291200#291200
 
 Questions and answers
 ---------------------
