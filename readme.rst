@@ -4,8 +4,24 @@ given a character, what fonts have it.
 
 Example usage::
 
+    $ unicode 🍁
+    U+1F341 MAPLE LEAF
+    UTF-8: f0 9f 8d 81 UTF-16BE: d83cdf41 Decimal: &#127809; Octal: \0371501
+    🍁
+    Category: So (Symbol, Other)
+    Unicode block: 1F300..1F5FF; Miscellaneous Symbols and Pictographs
+    Bidi: ON (Other Neutrals)
+
     $ fonts_with_chars.py 🍁
     /usr/share/fonts/truetype/unifont/unifont_upper.ttf
+    $ unicode ᚠ
+    U+16A0 RUNIC LETTER FEHU FEOH FE F
+    UTF-8: e1 9a a0 UTF-16BE: 16a0 Decimal: &#5792; Octal: \013240
+    ᚠ
+    Category: Lo (Letter, Other)
+    Unicode block: 16A0..16FF; Runic
+    Bidi: L (Left-to-Right)
+
     $ fonts_with_chars.py ᚠ
     /usr/share/fonts/truetype/unifont/unifont.ttf
     /usr/share/fonts/truetype/junicode/Junicode.ttf
