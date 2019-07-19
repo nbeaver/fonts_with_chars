@@ -32,7 +32,22 @@ Example usage::
     /usr/share/fonts/truetype/junicode/Junicode-Italic.ttf
     /usr/share/fonts/truetype/noto/NotoSansRunic-Regular.ttf
 
-Multiple characters:
+Multiple characters::
+
+    $ fonts_with_chars.py '𝗔 ⨯ (𝗕⨯𝗖) = 𝗕 (𝗔⨯𝗖) − 𝗖 (𝗔⨯𝗕)'
+    /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf
+    /usr/share/texmf/fonts/opentype/public/tex-gyre-math/texgyreschola-math.otf
+    /usr/share/texmf/fonts/opentype/public/tex-gyre-math/texgyredejavu-math.otf
+    /usr/share/fonts/truetype/dejavu/DejaVuMathTeXGyre.ttf
+    /usr/share/texmf/fonts/opentype/public/lm-math/latinmodern-math.otf
+    /usr/share/fonts/opentype/stix-word/STIX-Regular.otf
+    /usr/share/texmf/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf
+    /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+    /usr/share/texmf/fonts/opentype/public/tex-gyre-math/texgyretermes-math.otf
+    /usr/share/fonts/opentype/stix-word/STIXMath-Regular.otf
+    /usr/share/texmf/fonts/opentype/public/tex-gyre-math/texgyrebonum-math.otf
+    /usr/share/fonts/truetype/asana-math/Asana-Math.otf
+    /usr/share/fonts/opentype/stix/STIXGeneral-Regular.otf
 
 Is that character being rendered with the font you think it is,
 or is it using a fall-back font?
