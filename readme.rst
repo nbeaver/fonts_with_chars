@@ -1,6 +1,8 @@
 Most fonts don't cover every code point.
 For some of the more unusual characters,
-given a character, what fonts have it.
+there may be only a few fonts available that have it.
+This script, given a character or characters,
+will show what fonts have it.
 
 This is also helpful for determining
 if text is being rendered with the expected font
