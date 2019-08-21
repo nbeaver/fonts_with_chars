@@ -1,3 +1,4 @@
 #! /usr/bin/env bash
 char=$*
-printf '%x' \'"$*" | xargs -I{} fc-list ":charset={}"
+hex_codepoint=$(printf '%x' \'"$*")
+fc-list ":charset=${hex_codepoint}"
