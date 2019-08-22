@@ -77,3 +77,16 @@ This is reasonable for applications that only need a single font,
 but for this use case it would be easier to convert them all at once,
 then iterate through the entire list of fonts.
 That's not how the ``fontconfig`` library works, though.
+
+I have included a script that uses ``fc-list`` directly on the hex codepoints,
+like this::
+
+    $ fc-list ':charset=1f341'
+    /usr/share/fonts/truetype/unifont/unifont_upper.ttf: Unifont Upper:style=Medium
+
+which is much faster. It is used like so::
+
+    $ fonts_with_chars.sh 🍁
+    /usr/share/fonts/truetype/unifont/unifont_upper.ttf: Unifont Upper:style=Medium
+
+However, this script only works with a single character.
